@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cronograma — Programação Back-End (Turma 1)</title>
+<meta name="description" content="Cronograma da UC Programação Back-End — Turma 1, 2º semestre de 2026 (projeto Arena-Connect).">
+<style>
+  :root{
+    --bg:#f6f7fb; --card:#fff; --ink:#1a1d29; --muted:#5b6274; --line:#e3e6ef;
+    --accent:#3b5bdb; --accent-soft:#e8edff; --ok:#1b7f4b; --warn-bg:#fff4e0; --warn-line:#f0b45a;
+    --off-bg:#f0f1f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#12141c; --card:#1b1e29; --ink:#e8eaf2; --muted:#9aa1b5; --line:#2b3040;
+      --accent:#8ea2ff; --accent-soft:#242a45; --ok:#5dd39e; --warn-bg:#3a2f18; --warn-line:#a87a2a;
+      --off-bg:#20232f;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;}
+  .wrap{max-width:860px;margin:0 auto;padding:2rem 1rem 3rem}
+  header h1{margin:0 0 .25rem;font-size:1.7rem;line-height:1.2}
+  header p{margin:.15rem 0;color:var(--muted)}
+  .aviso{margin:1.25rem 0;padding:.9rem 1rem;background:var(--warn-bg);
+    border:1px solid var(--warn-line);border-radius:10px}
+  .aviso strong{display:block;margin-bottom:.2rem}
+  section{margin-top:1.75rem}
+  h2{font-size:1.15rem;margin:0 0 .6rem;display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+  .tag{font-size:.75rem;font-weight:600;padding:.1rem .55rem;border-radius:99px;
+    background:var(--accent-soft);color:var(--accent)}
+  .tag.ok{background:transparent;border:1px solid var(--ok);color:var(--ok)}
+  .scroll{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:10px}
+  table{border-collapse:collapse;width:100%;min-width:560px}
+  th,td{text-align:left;padding:.55rem .8rem;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);background:var(--card)}
+  tr:last-child td{border-bottom:0}
+  td.n{font-variant-numeric:tabular-nums;font-weight:600;width:3.2rem}
+  td.d{white-space:nowrap;width:8.5rem}
+  tr.off td{background:var(--off-bg);color:var(--muted)}
+  .entrega{color:var(--accent);font-weight:600}
+  code{font:.9em ui-monospace,SFMono-Regular,Consolas,monospace;background:var(--accent-soft);
+    padding:.05rem .3rem;border-radius:4px}
+  footer{margin-top:2rem;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Programação Back-End — Turma 1</h1>
+    <p>Projeto Arena-Connect · 2º semestre de 2026</p>
+    <p>Aulas: segundas (4 aulas) e quartas (6 aulas) · Período: 19/08 a 04/11/2026</p>
+    <p><strong>Última atualização:</strong> 21/09/2026</p>
+  </header>
+
+  <div class="aviso" role="note">
+    <strong>Aviso — semana de 05/10</strong>
+    O professor estará fora de 25/09 a 04/10, então <strong>não haverá aula em 28/09 e 30/09</strong>.
+    Essas aulas serão repostas na semana de volta: <strong>segunda 05/10 e quarta 07/10 serão dias de 10 aulas</strong>
+    (manhã e tarde), com dois temas em cada dia. A numeração abaixo é a mesma usada no Classroom.
+  </div>
+
+  <section>
+    <h2>Sprint 1 — Programação Orientada a Objetos <span class="tag ok">Concluída</span></h2>
+    <div class="scroll"><table>
+      <thead><tr><th>Aula</th><th>Data</th><th>Tema</th><th>Entrega</th></tr></thead>
+      <tbody>
+        <tr><td class="n">01</td><td class="d">19/08 (qua)</td><td>Encapsulamento — atributos privados, getters/setters</td><td>—</td></tr>
+        <tr><td class="n">02</td><td class="d">24/08 (seg)</td><td>Herança e Abstração — classe <code>Pessoa</code></td><td>—</td></tr>
+        <tr><td class="n">03</td><td class="d">26/08 (qua)</td><td>Enumerações, Agregação + missão “Exo-Shelter Engine”</td><td><code>exo_shelter.js</code></td></tr>
+        <tr><td class="n">04</td><td class="d">31/08 (seg)</td><td>Revisão geral de POO</td><td>—</td></tr>
+        <tr><td class="n">05</td><td class="d">02/09 (qua)</td><td>Prova escrita — Sprint 1</td><td class="entrega">Nota entregue em 09/09</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>Sprint 2 — Modularização e Regras de Negócio <span class="tag">Em andamento</span></h2>
+    <div class="scroll"><table>
+      <thead><tr><th>Aula</th><th>Data</th><th>Tema</th><th>Entrega</th></tr></thead>
+      <tbody>
+        <tr><td class="n">06</td><td class="d">09/09 (qua)</td><td>Diagrama de Classes UML</td><td>Diagrama do projeto</td></tr>
+        <tr><td class="n">07</td><td class="d">16/09 (qua)</td><td>Revisão de UML + Modularização — organizando o código em arquivos</td><td>—</td></tr>
+        <tr><td class="n">08</td><td class="d">21/09 (seg)</td><td>Clean Code — nomes, funções pequenas, tratamento de erros</td><td>—</td></tr>
+        <tr><td class="n">09</td><td class="d">23/09 (qua)</td><td>Design Patterns leves + introdução ao MVC</td><td>—</td></tr>
+        <tr class="off"><td class="n">—</td><td class="d">28/09 (seg) e 30/09 (qua)</td><td>Sem aula — professor de licença (aulas repostas na semana de 05/10)</td><td>—</td></tr>
+        <tr><td class="n">10</td><td class="d">05/10 (seg)<br><small>1ª parte do dia</small></td><td>Persistência em arquivo — salvando dados em JSON</td><td>—</td></tr>
+        <tr><td class="n">11</td><td class="d">05/10 (seg)<br><small>2ª parte do dia</small></td><td>Partidas, Placar e Classificação</td><td class="entrega">Entrega Sprint 2</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>Sprint 3 — Aplicação Web e Banco de Dados</h2>
+    <div class="scroll"><table>
+      <thead><tr><th>Aula</th><th>Data</th><th>Tema</th><th>Entrega</th></tr></thead>
+      <tbody>
+        <tr><td class="n">12</td><td class="d">07/10 (qua)<br><small>1ª parte do dia</small></td><td>Express — primeira rota do servidor</td><td>—</td></tr>
+        <tr><td class="n">13</td><td class="d">07/10 (qua)<br><small>2ª parte do dia</small></td><td>Views com EJS — as primeiras telas</td><td>—</td></tr>
+        <tr><td class="n">14</td><td class="d">14/10 (qua)</td><td>CRUD completo via tela</td><td class="entrega">Entregável do semestre</td></tr>
+        <tr><td class="n">15</td><td class="d">19/10 (seg)</td><td>Preparação da Vitrine</td><td>—</td></tr>
+        <tr><td class="n">16</td><td class="d">21/10 (qua)</td><td><strong>Vitrine Pública</strong> — Semana Tecnológica</td><td>Apresentação do projeto</td></tr>
+        <tr><td class="n">17</td><td class="d">26/10 (seg)</td><td>MySQL — conexão e estrutura do banco</td><td>—</td></tr>
+        <tr><td class="n">18</td><td class="d">28/10 (qua)</td><td>MySQL — trocando o JSON pelo banco de dados</td><td class="entrega">Entrega Sprint 3</td></tr>
+        <tr><td class="n">19</td><td class="d">04/11 (qua)</td><td>Fechamento do semestre</td><td>Encerramento da UC</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <footer>Datas sujeitas a pequenos ajustes conforme o ritmo da turma. Acompanhe os anúncios no Classroom.</footer>
+</div>
+</body>
+</html>
